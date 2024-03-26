@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MyButton from "./components/MyButton/MyButton.jsx";
+import Profile from "./components/NavBar/Profile.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <p>Hello, This is a React App</p>
+      <MyButton buttonText="Are the props working?" />
+      <Profile
+        profileName="Stan Lee"
+        profileAge="97"
+        profileRole="Film/Comic Legend"
+      />
+      <Profile
+        profileName="Rafael Nadal"
+        profileAge="37"
+        profileRole="Tennis Legend"
+      />
+      <Profile
+        profileName="Michael Afabor"
+        profileAge="25"
+        profileRole="Greatest to Ever Do It"
+      />
+    </>
   );
 }
 

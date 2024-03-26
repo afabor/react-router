@@ -1,0 +1,10 @@
+.profile-card {
+  background-color: burlywood;
+  width: 15%;
+
+  border-radius: 16px;
+}
+
+.profile-card p {
+  font-weight: bold;
+}
